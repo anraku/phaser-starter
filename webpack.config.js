@@ -2,11 +2,12 @@
 const path = require("path");
 const pathToPhaser = path.join(__dirname, "/node_modules/phaser/");
 const phaser = path.join(pathToPhaser, "dist/phaser.js");
+const outputPath = path.resolve(__dirname, 'public');
 
 module.exports = {
   entry: "./src/index.ts",      //エントリポイント。依存関係整理の起点にするファイル。
   output: {
-    path: path.resolve(__dirname, "public/js"),    //distというディレクトリに生成する
+    path: outputPath,    //distというディレクトリに生成する
     filename: "bundle.js"   //バンドルして書き出すファイル名
   },
   module: {
@@ -35,8 +36,7 @@ module.exports = {
   },
   //開発用サーバを立てるときの設定
   devServer: {
-    contentBase: path.resolve(__dirname, "public"),
-    host: "127.0.0.1",
+    contentBase: outputPath,
     port: 8080,
     open: true
   },
