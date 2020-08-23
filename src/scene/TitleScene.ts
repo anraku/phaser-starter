@@ -5,7 +5,6 @@ export class TitleScene extends Phaser.Scene {
     });
   }
 
-  /**ロードが終わったあとのライフサイクルで呼ばれるメソッド */
   create(): void {
     const { width, height } = this.game.canvas;
 

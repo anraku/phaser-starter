@@ -11,6 +11,7 @@ export class MainScene extends Phaser.Scene {
     const { width, height } = this.game.canvas;
 
     this.add.image(width / 2, height / 2, 'logo');
+    this.add.text(width / 2, height / 2 + 50, 'Hello World').setOrigin(0.5); // setOriginでテキストを中央寄せ
   }
 
   update(): void {

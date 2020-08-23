@@ -4,7 +4,6 @@ export class LoadingScene extends Phaser.Scene {
       key: 'Loading',
     });
   }
-  /**アセットを読み込むライフサイクルで呼ばれるメソッド*/
   preload(): void {
     //ロード中の文面を設定する
     const loadingText = (progress: number): string =>
