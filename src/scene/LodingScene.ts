@@ -1,4 +1,4 @@
-export default class LoadingScene extends Phaser.Scene {
+export class LoadingScene extends Phaser.Scene {
   constructor() {
     super({
       key: 'Loading',
@@ -14,17 +14,14 @@ export default class LoadingScene extends Phaser.Scene {
     const currentLoadingText = this.add.text(10, 10, loadingText(0));
 
     //ファイルのロードをしていく
-    this.load.image('acorn', './assets/picture.png');
-    //疑似的に大量のアセットをロードするかのような動きをさせてる
-    for (let index = 0; index < 100; index++) {
-      this.load.image('acorn' + index, '../assets/picture.png');
-    }
+    this.load.image('logo', '../assets/phaser3-logo.png');
 
     //ロードに進捗があるたびに発生するイベント
     this.load.on('progress', (progress: number) => {
       //テキストの内容を書き換える
       currentLoadingText.text = loadingText(progress);
     });
+
     //ロードが完了すると発生するイベント
     this.load.on('complete', () => {
       //タイトルシーンへ遷移

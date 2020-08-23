@@ -1,12 +1,11 @@
-import 'phaser';
-
+import * as Phaser from 'phaser';
 //あとでコメントアウトを解除する
-import Scenes from './scenes/scenes';
+import { Scenes } from './scene';
 
 //コンフィグ
 const config: Phaser.Types.Core.GameConfig = {
   //画面サイズ
-  width: 360,
+  width: 800,
   height: 640,
   type: Phaser.AUTO,
   //ゲーム画面を描画するcanvasを書き出す先
@@ -17,7 +16,7 @@ const config: Phaser.Types.Core.GameConfig = {
     autoCenter: Phaser.Scale.CENTER_BOTH,
     parent: 'game',
   },
-  //あとでコメントアウトを解除する
+  // resolution: window.devicePixelRatio, // Retina環境で多少見た目がよくなる
   //必要なシーンを読み込む
   scene: Scenes,
 };

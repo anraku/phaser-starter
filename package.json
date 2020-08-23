@@ -11,10 +11,11 @@
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^3.8.0",
     "@typescript-eslint/parser": "^3.8.0",
+    "copy-webpack-plugin": "^6.0.3",
     "eslint": "^7.6.0",
     "eslint-config-prettier": "^6.11.0",
     "eslint-plugin-prettier": "^3.1.4",
-    "expose-loader": "^1.0.0",
+    "html-webpack-plugin": "^4.3.0",
     "prettier": "^2.0.5",
     "ts-loader": "^8.0.2",
     "typescript": "^3.9.7",
