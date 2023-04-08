@@ -9,8 +9,8 @@
     "build": "webpack --mode production"
   },
   "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "^3.8.0",
-    "@typescript-eslint/parser": "^3.8.0",
+    "@typescript-eslint/eslint-plugin": "^5.57.1",
+    "@typescript-eslint/parser": "^5.57.1",
     "copy-webpack-plugin": "^6.0.3",
     "eslint": "^7.6.0",
     "eslint-config-prettier": "^6.11.0",
@@ -18,12 +18,12 @@
     "html-webpack-plugin": "^4.3.0",
     "prettier": "^2.0.5",
     "ts-loader": "^8.0.2",
-    "typescript": "^3.9.7",
+    "typescript": "^5.0.4",
     "webpack": "^4.44.1",
     "webpack-cli": "^3.3.12",
     "webpack-dev-server": "^3.11.0"
   },
   "dependencies": {
-    "phaser": "^3.24.1"
+    "phaser": "^3.55.2"
   }
 }
